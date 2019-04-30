@@ -12,6 +12,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import  android.widget.Button;
+import android.widget.ImageView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -47,6 +48,8 @@ public final class MainActivity extends AppCompatActivity {
         requestQueue = Volley.newRequestQueue(this);
 
         setContentView(R.layout.activity_main);
+        ImageView pic = findViewById(R.id.imageView2);
+        pic.setImageResource(R.drawable.doggo);
         generate = findViewById(R.id.button2);
         generate.setOnClickListener(v -> {
             Log.d(TAG, "Button Clicked");
